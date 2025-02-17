@@ -1,10 +1,7 @@
-def dec_oct(n) -> int:
-    if n == 0:
-        return ""
-    else:
-        return dec_oct(n // 8) + str(n % 8)
-
-
+# f(n) = 3 + n
+# O(n)
 n = int(input())
-print(dec_oct(n))
-# print(n, oct(n))
+r = 0
+for i in range(n):
+    r += i
+print(r)
